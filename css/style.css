@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/* 日本語 */
+/*scss set*/
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-family: "Noto Serif", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.logo {
+  width: 145px;
+  height: auto;
+}
+
+.fs01 {
+  font-family: "Noto Sans JP", sans-serif;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+.fs02 {
+  font-family: "Noto Sans JP", sans-serif;
+  padding-bottom: 0.6em;
+}
+
+.btnMore {
+  text-align: center;
+  margin-top: auto;
+}
+.btnMore--link {
+  display: inline-block;
+  border-bottom: 1px #333 solid;
+  padding-bottom: 0.2em;
+  font-size: 1.4rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.listMenuBox__text {
+  display: block;
+  font-size: 1.4rem;
+  font-family: "Noto Serif", sans-serif;
+}
+
+/*PC*/
+/*header*/
+.header__logoArea {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 0 auto;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+}
+.header__menuArea {
+  background: #333;
+  padding: 0.6em 0;
+}
+.header__menuBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 0 auto;
+  padding-left: 16px;
+}
+.header__menuBlock--link {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-right: 3em;
+}
+
+.wrapper {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/*pickup*/
+.pickupArea {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 56px 0;
+}
+
+.pickupBlock {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+/*main*/
+.mainArea {
+  width: 66%;
+}
+
+.mainBlock {
+  padding-bottom: 80px;
+}
+.mainBlock__title {
+  font-size: 2.4rem;
+}
+
+.meta {
+  display: flex;
+  font-size: 1.4rem;
+  font-style: "Noto Sans", sans-serif;
+  padding: 0 0 0.8em 0;
+}
+.meta__date {
+  padding-right: 1em;
+}
+
+.articleBlock__textArea {
+  width: 90%;
+  margin: 0 auto;
+}
+.articleBlock__text {
+  font-family: "Noto Serif", sans-serif;
+  padding: 0.6em 0 2.4em 0;
+}
+
+/*side*/
+.sideArea {
+  width: 28%;
+}
+
+.sideBlock {
+  margin-bottom: 32px;
+}
+.sideBlock__img {
+  display: block;
+  margin: 0 auto;
+}
+.sideBlock__title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1em 0;
+}
+.sideBlock__text {
+  font-size: 1.4rem;
+  font-family: "Noto Serif", sans-serif;
+  padding-top: 0.4em;
+}
+
+.profileImg {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.rankingBox__list {
+  padding-bottom: 2em;
+  display: block;
+}
+
+.archive__text {
+  padding: 1.4em 0;
+  border-top: 1px solid #777;
+  text-indent: 1em;
+}
+.archive__list:last-child {
+  border-bottom: 1px solid #777;
+}
+
+/*footer*/
+.footer {
+  background: #F7F7F7;
+  margin-top: 80px;
+}
+
+.footerArea {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.footerBlock {
+  width: calc((100% - 90px) / 3);
+  flex-wrap: wrap;
+}
+.footerBlock__title {
+  font-size: 1.8rem;
+  padding: 2.4em 0;
+}
+.footerBlock__text {
+  font-size: 1.4rem;
+  font-family: "Noto Serif", sans-serif;
+  padding-bottom: 1.5em;
+}
+
+.about__text {
+  display: inline-block;
+  padding-bottom: 0.4em;
+}
+.about__text:before {
+  content: "▼";
+}
+
+.fmenu__text {
+  border-top: 1px solid #777;
+  text-indent: 1em;
+  display: block;
+  padding: 1em 0;
+  font-size: 1.4rem;
+}
+.fmenu__list:last-child {
+  border-bottom: 1px solid #777;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0.6em 0;
+  font-size: 1.2rem;
+}
+
+/*SP*/
+@media screen and (max-width: 750px) {
+  .header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+  }
+  .header__menuArea {
+    overflow-x: scroll;
+  }
+  .wrapper {
+    padding-top: 100px;
+  }
+  .pickupArea {
+    flex-direction: column;
+  }
+  .pickupBlock {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .container {
+    display: block;
+  }
+  .mainArea, .sideArea {
+    width: 100%;
+  }
+  .sideArea {
+    margin-top: 40px;
+  }
+  .profileImg {
+    width: 24%;
+  }
+  .footerArea {
+    display: block;
+  }
+  .footerBlock {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
